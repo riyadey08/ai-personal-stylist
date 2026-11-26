@@ -8,5 +8,6 @@ __pycache__/
 .ipynb_checkpoints/
 models/
 reports/*.md
+!reports/evaluation.md
 st_out.log
 st_err.log

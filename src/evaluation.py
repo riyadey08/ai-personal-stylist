@@ -97,7 +97,7 @@ def body_shape_metrics(labeled_csv: Path) -> dict[str, Any]:
         "accuracy": round(float(accuracy_score(y_true, y_pred)), 4),
         "macro_f1": round(float(f1_score(y_true, y_pred, average="macro", zero_division=0)), 4),
         "majority_baseline_accuracy": round(majority, 4),
-        "per_class_recall": {label: round(float(v), 4) for label, v in zip(labels, recall_score(y_true, y_pred, labels=labels, zero_division=0))},
+        "per_class_recall": {label: round(float(v), 4) for label, v in zip(labels, recall_score(y_true, y_pred, labels=labels, average=None, zero_division=0))},
         "confusion_matrix": {"labels": labels, "matrix": cm.tolist()},
     }
 
