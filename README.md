@@ -1,4 +1,4 @@
-# AI Personal Stylist (v2)
+# AI Personal Stylist
 
 A Streamlit app that turns **full-body photos + an occasion** into a grounded outfit recommendation, and can also judge whether a **specific dress** is likely to flatter the customer.
 
